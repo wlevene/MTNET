@@ -10,6 +10,7 @@ MTNET是一个ios的http网络库，用来处理有大量很频繁发起http请�
 
 开发者可继承MTDownloadRecvDataFileSystem类，灵活指定下载文件的存储路径和存储文件名，并提供文件是否缓存和获取缓存文件的方法
 
+***MTNET是MRC版本***
 
 # 使用
 引入头文件
@@ -62,7 +63,7 @@ request.delegate  = self;
 [self.downloadHelper cancelDownloadRequestByName:request.name];
 ```
 
-使用delegate ***MTDownloadRequestDelegate*** 获取下载结果
+使用`MTDownloadRequestDelegate` 获取下载结果
 
 ```objectivec
 - (void) didTaskReceiveDataFinish   : (NSData *) theData    request:(MTDownloadRequest*) request
@@ -79,7 +80,7 @@ request.delegate  = self;
 
 
 ###自定义接收下载规则
-可以继承MTDownloadRecvDataFileSystem自己制定下载规则，在此类中还提供了***processRecvAllDataFinish*** 和 ***processRecvAllDataFalied***这两个方法，重写就可以自定义处理当下载数据出错或者成功后的操作
+可以继承`MTDownloadRecvDataFileSystem`自己制定下载规则，在此类中还提供了`processRecvAllDataFinish` 和 `processRecvAllDataFalied`这两个方法，重写就可以自定义处理当下载数据出错或者成功后的操作
 
 比如 下载数据出错后需要清理缓存，下载成功后需要对文件进行解压、压缩、图片缩放等
 
@@ -149,6 +150,25 @@ request.delegate  = self;
 
 ```
 
+
+
+向下载池中投入一个自己定义下载规则的请求
+
+```objectivec
+MTDownloadRequest * request = [[MTDownloadRequest alloc] init];
+    
+MTDownloadObjectModel * downloadMdel = [[MTDownloadObjectModel alloc] init];
+downloadMdel.url = @"http://www.baidu.com";
+request.downloadModel = downloadMdel;
+    
+AppImageDowloadRecv * recvData = [[AppImageDowloadRecv alloc] init];
+[recvData setFileName:@"filename"];
+request.recvData = recvData;
+    
+request.delegate  = self;
+    
+[self.downloadHelper addDownloadRequest:request];
+```
 
 
 

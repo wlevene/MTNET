@@ -57,24 +57,17 @@
 {
     MTDownloadRequest * request = [[MTDownloadRequest alloc] init];
     
-
-    
     MTDownloadObjectModel * downloadMdel = [[MTDownloadObjectModel alloc] init];
     downloadMdel.url = @"http://www.baidu.com";
     request.downloadModel = downloadMdel;
-    
-    request.delegate  = self;
-    
     
     AppImageDowloadRecv * recvData = [[AppImageDowloadRecv alloc] init];
     [recvData setFileName:@"filename"];
     request.recvData = recvData;
     
+    request.delegate  = self;
     
     [self.downloadHelper addDownloadRequest:request];
-    
-    
-    
     
     // cancel download
     // [self.downloadHelper cancelDownloadRequestByName:request.name];

@@ -32,6 +32,7 @@
 		2395478D1BCF92B400C957B8 /* MTTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 239547781BCF92B400C957B8 /* MTTask.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2395478E1BCF92B400C957B8 /* MTTaskPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2395477B1BCF92B400C957B8 /* MTTaskPool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2395478F1BCF92B400C957B8 /* MTTaskResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 2395477D1BCF92B400C957B8 /* MTTaskResult.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		239547921BCF963300C957B8 /* AppImageDowloadRecv.m in Sources */ = {isa = PBXBuildFile; fileRef = 239547911BCF963300C957B8 /* AppImageDowloadRecv.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,8 @@
 		2395477B1BCF92B400C957B8 /* MTTaskPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTaskPool.m; sourceTree = "<group>"; };
 		2395477C1BCF92B400C957B8 /* MTTaskResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTaskResult.h; sourceTree = "<group>"; };
 		2395477D1BCF92B400C957B8 /* MTTaskResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTaskResult.m; sourceTree = "<group>"; };
+		239547901BCF963300C957B8 /* AppImageDowloadRecv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppImageDowloadRecv.h; sourceTree = "<group>"; };
+		239547911BCF963300C957B8 /* AppImageDowloadRecv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppImageDowloadRecv.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 				2395472C1BCF929D00C957B8 /* LaunchScreen.storyboard */,
 				2395472F1BCF929D00C957B8 /* Info.plist */,
 				2395471E1BCF929D00C957B8 /* Supporting Files */,
+				239547901BCF963300C957B8 /* AppImageDowloadRecv.h */,
+				239547911BCF963300C957B8 /* AppImageDowloadRecv.m */,
 			);
 			path = MTNetDemo;
 			sourceTree = "<group>";
@@ -421,6 +426,7 @@
 				2395478F1BCF92B400C957B8 /* MTTaskResult.m in Sources */,
 				2395478E1BCF92B400C957B8 /* MTTaskPool.m in Sources */,
 				2395478D1BCF92B400C957B8 /* MTTask.m in Sources */,
+				239547921BCF963300C957B8 /* AppImageDowloadRecv.m in Sources */,
 				239547801BCF92B400C957B8 /* Base64Transcoder.c in Sources */,
 				239547261BCF929D00C957B8 /* ViewController.m in Sources */,
 				239547841BCF92B400C957B8 /* NSData+Extension.m in Sources */,

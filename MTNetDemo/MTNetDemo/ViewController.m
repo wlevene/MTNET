@@ -12,6 +12,7 @@
 #import "MTDownloadObjectModel.h"
 #import "MTDownloadRequest.h"
 #import "MTDownloadRecvData.h"
+#import "AppImageDowloadRecv.h"
 
 @interface ViewController ()<MTDownloadRequestDelegate>
 
@@ -26,10 +27,17 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     self.downloadHelper = [[MTDownloaderHelper alloc] init];
+    
     [self.downloadHelper setTimeout:20];
     [self.downloadHelper setMaxConcurrentTaskCount:5];
     
     
+    
+}
+
+
+- (void) download1
+{
     MTDownloadRequest * request = [[MTDownloadRequest alloc] init];
     MTDownloadObjectModel * downloadMdel = [[MTDownloadObjectModel alloc] init];
     downloadMdel.url = @"http://www.baidu.com";
@@ -41,9 +49,37 @@
     
     
     // cancel download
-    [self.downloadHelper cancelDownloadRequestByName:request.name];
-    
+    // [self.downloadHelper cancelDownloadRequestByName:request.name];
 }
+
+
+- (void) download2
+{
+    MTDownloadRequest * request = [[MTDownloadRequest alloc] init];
+    
+
+    
+    MTDownloadObjectModel * downloadMdel = [[MTDownloadObjectModel alloc] init];
+    downloadMdel.url = @"http://www.baidu.com";
+    request.downloadModel = downloadMdel;
+    
+    request.delegate  = self;
+    
+    
+    AppImageDowloadRecv * recvData = [[AppImageDowloadRecv alloc] init];
+    [recvData setFileName:@"filename"];
+    request.recvData = recvData;
+    
+    
+    [self.downloadHelper addDownloadRequest:request];
+    
+    
+    
+    
+    // cancel download
+    // [self.downloadHelper cancelDownloadRequestByName:request.name];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

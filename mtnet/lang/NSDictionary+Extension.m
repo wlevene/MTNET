@@ -7,7 +7,7 @@
 //
 
 #import "NSDictionary+Extension.h"
-
+#include "NSString+Extension.h"
 
 @implementation NSDictionary (Extension)
 + (BOOL) isNilOrEmpty:(NSDictionary *) dictionary

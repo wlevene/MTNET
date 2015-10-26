@@ -17,7 +17,12 @@ MTNET是一个十分轻量、功能强大的ios的http网络库，用来处理�
 
 开发者可继承MTDownloadRecvDataFileSystem类，灵活指定下载文件的存储路径和存储文件名，并提供文件是否缓存和获取缓存文件的方法
 
+
 ***MTNET是MRC版本***
+
+# ToDo
+- 有很多同学反馈需要支持arc版本， 会尽快支持
+
 
 # 使用
 引入头文件
@@ -179,4 +184,6 @@ request.delegate  = self;
 
 
 
+---
+If you like this project, give a start ；）
 

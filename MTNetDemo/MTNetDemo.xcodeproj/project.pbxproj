@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23188ACA1BE6F03200FC8F9F /* MTFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 23188AA21BE6F03200FC8F9F /* MTFile.m */; };
+		23188ACB1BE6F03200FC8F9F /* MTPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 23188AA41BE6F03200FC8F9F /* MTPath.m */; };
+		23188ACC1BE6F03200FC8F9F /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 23188AA61BE6F03200FC8F9F /* Base64Transcoder.c */; };
+		23188ACD1BE6F03200FC8F9F /* MTFixSizeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 23188AA91BE6F03200FC8F9F /* MTFixSizeMutableDictionary.m */; };
+		23188ACE1BE6F03200FC8F9F /* MTSchemeUrlParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 23188AAB1BE6F03200FC8F9F /* MTSchemeUrlParse.m */; };
+		23188ACF1BE6F03200FC8F9F /* NSArray+NSArrayExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 23188AAD1BE6F03200FC8F9F /* NSArray+NSArrayExtension.m */; };
+		23188AD01BE6F03200FC8F9F /* NSData+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 23188AAF1BE6F03200FC8F9F /* NSData+Extension.m */; };
+		23188AD11BE6F03200FC8F9F /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 23188AB11BE6F03200FC8F9F /* NSDictionary+Extension.m */; };
+		23188AD21BE6F03200FC8F9F /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 23188AB31BE6F03200FC8F9F /* NSObject+Extension.m */; };
+		23188AD31BE6F03200FC8F9F /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 23188AB51BE6F03200FC8F9F /* NSString+Extension.m */; };
+		23188AD41BE6F03200FC8F9F /* MTDownloaderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 23188ABB1BE6F03200FC8F9F /* MTDownloaderHelper.m */; };
+		23188AD51BE6F03200FC8F9F /* MTDownloadObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 23188ABD1BE6F03200FC8F9F /* MTDownloadObjectModel.m */; };
+		23188AD61BE6F03200FC8F9F /* MTDownloadRecvData.m in Sources */ = {isa = PBXBuildFile; fileRef = 23188ABF1BE6F03200FC8F9F /* MTDownloadRecvData.m */; };
+		23188AD71BE6F03200FC8F9F /* MTDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 23188AC11BE6F03200FC8F9F /* MTDownloadRequest.m */; };
+		23188AD81BE6F03200FC8F9F /* MTTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 23188AC41BE6F03200FC8F9F /* MTTask.m */; };
+		23188AD91BE6F03200FC8F9F /* MTTaskPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 23188AC71BE6F03200FC8F9F /* MTTaskPool.m */; };
+		23188ADA1BE6F03200FC8F9F /* MTTaskResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 23188AC91BE6F03200FC8F9F /* MTTaskResult.m */; };
 		239547201BCF929D00C957B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2395471F1BCF929D00C957B8 /* main.m */; };
 		239547231BCF929D00C957B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 239547221BCF929D00C957B8 /* AppDelegate.m */; };
 		239547261BCF929D00C957B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 239547251BCF929D00C957B8 /* ViewController.m */; };
@@ -15,24 +32,7 @@
 		2395472E1BCF929D00C957B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2395472C1BCF929D00C957B8 /* LaunchScreen.storyboard */; };
 		239547391BCF929D00C957B8 /* MTNetDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 239547381BCF929D00C957B8 /* MTNetDemoTests.m */; };
 		239547441BCF929D00C957B8 /* MTNetDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 239547431BCF929D00C957B8 /* MTNetDemoUITests.m */; };
-		2395477E1BCF92B400C957B8 /* MTFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 239547541BCF92B400C957B8 /* MTFile.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2395477F1BCF92B400C957B8 /* MTPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 239547561BCF92B400C957B8 /* MTPath.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		239547801BCF92B400C957B8 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 239547581BCF92B400C957B8 /* Base64Transcoder.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		239547811BCF92B400C957B8 /* MTFixSizeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2395475B1BCF92B400C957B8 /* MTFixSizeMutableDictionary.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		239547821BCF92B400C957B8 /* MTSchemeUrlParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2395475D1BCF92B400C957B8 /* MTSchemeUrlParse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		239547831BCF92B400C957B8 /* NSArray+NSArrayExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2395475F1BCF92B400C957B8 /* NSArray+NSArrayExtension.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		239547841BCF92B400C957B8 /* NSData+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 239547611BCF92B400C957B8 /* NSData+Extension.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		239547861BCF92B400C957B8 /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 239547651BCF92B400C957B8 /* NSDictionary+Extension.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		239547871BCF92B400C957B8 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 239547671BCF92B400C957B8 /* NSObject+Extension.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		239547881BCF92B400C957B8 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 239547691BCF92B400C957B8 /* NSString+Extension.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		239547891BCF92B400C957B8 /* MTDownloaderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2395476F1BCF92B400C957B8 /* MTDownloaderHelper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2395478A1BCF92B400C957B8 /* MTDownloadObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 239547711BCF92B400C957B8 /* MTDownloadObjectModel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2395478B1BCF92B400C957B8 /* MTDownloadRecvData.m in Sources */ = {isa = PBXBuildFile; fileRef = 239547731BCF92B400C957B8 /* MTDownloadRecvData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2395478C1BCF92B400C957B8 /* MTDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 239547751BCF92B400C957B8 /* MTDownloadRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2395478D1BCF92B400C957B8 /* MTTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 239547781BCF92B400C957B8 /* MTTask.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2395478E1BCF92B400C957B8 /* MTTaskPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2395477B1BCF92B400C957B8 /* MTTaskPool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2395478F1BCF92B400C957B8 /* MTTaskResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 2395477D1BCF92B400C957B8 /* MTTaskResult.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		239547921BCF963300C957B8 /* AppImageDowloadRecv.m in Sources */ = {isa = PBXBuildFile; fileRef = 239547911BCF963300C957B8 /* AppImageDowloadRecv.m */; settings = {ASSET_TAGS = (); }; };
+		239547921BCF963300C957B8 /* AppImageDowloadRecv.m in Sources */ = {isa = PBXBuildFile; fileRef = 239547911BCF963300C957B8 /* AppImageDowloadRecv.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +53,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23188AA11BE6F03200FC8F9F /* MTFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFile.h; sourceTree = "<group>"; };
+		23188AA21BE6F03200FC8F9F /* MTFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFile.m; sourceTree = "<group>"; };
+		23188AA31BE6F03200FC8F9F /* MTPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPath.h; sourceTree = "<group>"; };
+		23188AA41BE6F03200FC8F9F /* MTPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPath.m; sourceTree = "<group>"; };
+		23188AA61BE6F03200FC8F9F /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		23188AA71BE6F03200FC8F9F /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		23188AA81BE6F03200FC8F9F /* MTFixSizeMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFixSizeMutableDictionary.h; sourceTree = "<group>"; };
+		23188AA91BE6F03200FC8F9F /* MTFixSizeMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFixSizeMutableDictionary.m; sourceTree = "<group>"; };
+		23188AAA1BE6F03200FC8F9F /* MTSchemeUrlParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSchemeUrlParse.h; sourceTree = "<group>"; };
+		23188AAB1BE6F03200FC8F9F /* MTSchemeUrlParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSchemeUrlParse.m; sourceTree = "<group>"; };
+		23188AAC1BE6F03200FC8F9F /* NSArray+NSArrayExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NSArrayExtension.h"; sourceTree = "<group>"; };
+		23188AAD1BE6F03200FC8F9F /* NSArray+NSArrayExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NSArrayExtension.m"; sourceTree = "<group>"; };
+		23188AAE1BE6F03200FC8F9F /* NSData+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Extension.h"; sourceTree = "<group>"; };
+		23188AAF1BE6F03200FC8F9F /* NSData+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Extension.m"; sourceTree = "<group>"; };
+		23188AB01BE6F03200FC8F9F /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
+		23188AB11BE6F03200FC8F9F /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
+		23188AB21BE6F03200FC8F9F /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		23188AB31BE6F03200FC8F9F /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+		23188AB41BE6F03200FC8F9F /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		23188AB51BE6F03200FC8F9F /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		23188AB71BE6F03200FC8F9F /* mcfDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcfDef.h; sourceTree = "<group>"; };
+		23188AB81BE6F03200FC8F9F /* MtLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtLogger.h; sourceTree = "<group>"; };
+		23188ABA1BE6F03200FC8F9F /* MTDownloaderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDownloaderHelper.h; sourceTree = "<group>"; };
+		23188ABB1BE6F03200FC8F9F /* MTDownloaderHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDownloaderHelper.m; sourceTree = "<group>"; };
+		23188ABC1BE6F03200FC8F9F /* MTDownloadObjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDownloadObjectModel.h; sourceTree = "<group>"; };
+		23188ABD1BE6F03200FC8F9F /* MTDownloadObjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDownloadObjectModel.m; sourceTree = "<group>"; };
+		23188ABE1BE6F03200FC8F9F /* MTDownloadRecvData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDownloadRecvData.h; sourceTree = "<group>"; };
+		23188ABF1BE6F03200FC8F9F /* MTDownloadRecvData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDownloadRecvData.m; sourceTree = "<group>"; };
+		23188AC01BE6F03200FC8F9F /* MTDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDownloadRequest.h; sourceTree = "<group>"; };
+		23188AC11BE6F03200FC8F9F /* MTDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDownloadRequest.m; sourceTree = "<group>"; };
+		23188AC31BE6F03200FC8F9F /* MTTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTask.h; sourceTree = "<group>"; };
+		23188AC41BE6F03200FC8F9F /* MTTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTask.m; sourceTree = "<group>"; };
+		23188AC51BE6F03200FC8F9F /* MTTaskDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTaskDef.h; sourceTree = "<group>"; };
+		23188AC61BE6F03200FC8F9F /* MTTaskPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTaskPool.h; sourceTree = "<group>"; };
+		23188AC71BE6F03200FC8F9F /* MTTaskPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTaskPool.m; sourceTree = "<group>"; };
+		23188AC81BE6F03200FC8F9F /* MTTaskResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTaskResult.h; sourceTree = "<group>"; };
+		23188AC91BE6F03200FC8F9F /* MTTaskResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTaskResult.m; sourceTree = "<group>"; };
 		2395471B1BCF929D00C957B8 /* MTNetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTNetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2395471F1BCF929D00C957B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		239547211BCF929D00C957B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,43 +106,6 @@
 		2395473F1BCF929D00C957B8 /* MTNetDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTNetDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		239547431BCF929D00C957B8 /* MTNetDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTNetDemoUITests.m; sourceTree = "<group>"; };
 		239547451BCF929D00C957B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		239547531BCF92B400C957B8 /* MTFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFile.h; sourceTree = "<group>"; };
-		239547541BCF92B400C957B8 /* MTFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFile.m; sourceTree = "<group>"; };
-		239547551BCF92B400C957B8 /* MTPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPath.h; sourceTree = "<group>"; };
-		239547561BCF92B400C957B8 /* MTPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPath.m; sourceTree = "<group>"; };
-		239547581BCF92B400C957B8 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
-		239547591BCF92B400C957B8 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
-		2395475A1BCF92B400C957B8 /* MTFixSizeMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFixSizeMutableDictionary.h; sourceTree = "<group>"; };
-		2395475B1BCF92B400C957B8 /* MTFixSizeMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFixSizeMutableDictionary.m; sourceTree = "<group>"; };
-		2395475C1BCF92B400C957B8 /* MTSchemeUrlParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSchemeUrlParse.h; sourceTree = "<group>"; };
-		2395475D1BCF92B400C957B8 /* MTSchemeUrlParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSchemeUrlParse.m; sourceTree = "<group>"; };
-		2395475E1BCF92B400C957B8 /* NSArray+NSArrayExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NSArrayExtension.h"; sourceTree = "<group>"; };
-		2395475F1BCF92B400C957B8 /* NSArray+NSArrayExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NSArrayExtension.m"; sourceTree = "<group>"; };
-		239547601BCF92B400C957B8 /* NSData+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Extension.h"; sourceTree = "<group>"; };
-		239547611BCF92B400C957B8 /* NSData+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Extension.m"; sourceTree = "<group>"; };
-		239547641BCF92B400C957B8 /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
-		239547651BCF92B400C957B8 /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
-		239547661BCF92B400C957B8 /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
-		239547671BCF92B400C957B8 /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
-		239547681BCF92B400C957B8 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
-		239547691BCF92B400C957B8 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
-		2395476B1BCF92B400C957B8 /* mcfDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcfDef.h; sourceTree = "<group>"; };
-		2395476C1BCF92B400C957B8 /* MtLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtLogger.h; sourceTree = "<group>"; };
-		2395476E1BCF92B400C957B8 /* MTDownloaderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDownloaderHelper.h; sourceTree = "<group>"; };
-		2395476F1BCF92B400C957B8 /* MTDownloaderHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDownloaderHelper.m; sourceTree = "<group>"; };
-		239547701BCF92B400C957B8 /* MTDownloadObjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDownloadObjectModel.h; sourceTree = "<group>"; };
-		239547711BCF92B400C957B8 /* MTDownloadObjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDownloadObjectModel.m; sourceTree = "<group>"; };
-		239547721BCF92B400C957B8 /* MTDownloadRecvData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDownloadRecvData.h; sourceTree = "<group>"; };
-		239547731BCF92B400C957B8 /* MTDownloadRecvData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDownloadRecvData.m; sourceTree = "<group>"; };
-		239547741BCF92B400C957B8 /* MTDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDownloadRequest.h; sourceTree = "<group>"; };
-		239547751BCF92B400C957B8 /* MTDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDownloadRequest.m; sourceTree = "<group>"; };
-		239547771BCF92B400C957B8 /* MTTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTask.h; sourceTree = "<group>"; };
-		239547781BCF92B400C957B8 /* MTTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTask.m; sourceTree = "<group>"; };
-		239547791BCF92B400C957B8 /* MTTaskDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTaskDef.h; sourceTree = "<group>"; };
-		2395477A1BCF92B400C957B8 /* MTTaskPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTaskPool.h; sourceTree = "<group>"; };
-		2395477B1BCF92B400C957B8 /* MTTaskPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTaskPool.m; sourceTree = "<group>"; };
-		2395477C1BCF92B400C957B8 /* MTTaskResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTaskResult.h; sourceTree = "<group>"; };
-		2395477D1BCF92B400C957B8 /* MTTaskResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTaskResult.m; sourceTree = "<group>"; };
 		239547901BCF963300C957B8 /* AppImageDowloadRecv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppImageDowloadRecv.h; sourceTree = "<group>"; };
 		239547911BCF963300C957B8 /* AppImageDowloadRecv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppImageDowloadRecv.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +135,90 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23188A9F1BE6F03200FC8F9F /* mtnet */ = {
+			isa = PBXGroup;
+			children = (
+				23188AA01BE6F03200FC8F9F /* io */,
+				23188AA51BE6F03200FC8F9F /* lang */,
+				23188AB71BE6F03200FC8F9F /* mcfDef.h */,
+				23188AB81BE6F03200FC8F9F /* MtLogger.h */,
+				23188AB91BE6F03200FC8F9F /* net */,
+				23188AC21BE6F03200FC8F9F /* task */,
+			);
+			path = mtnet;
+			sourceTree = "<group>";
+		};
+		23188AA01BE6F03200FC8F9F /* io */ = {
+			isa = PBXGroup;
+			children = (
+				23188AA11BE6F03200FC8F9F /* MTFile.h */,
+				23188AA21BE6F03200FC8F9F /* MTFile.m */,
+				23188AA31BE6F03200FC8F9F /* MTPath.h */,
+				23188AA41BE6F03200FC8F9F /* MTPath.m */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
+		23188AA51BE6F03200FC8F9F /* lang */ = {
+			isa = PBXGroup;
+			children = (
+				23188AA61BE6F03200FC8F9F /* Base64Transcoder.c */,
+				23188AA71BE6F03200FC8F9F /* Base64Transcoder.h */,
+				23188AA81BE6F03200FC8F9F /* MTFixSizeMutableDictionary.h */,
+				23188AA91BE6F03200FC8F9F /* MTFixSizeMutableDictionary.m */,
+				23188AAA1BE6F03200FC8F9F /* MTSchemeUrlParse.h */,
+				23188AAB1BE6F03200FC8F9F /* MTSchemeUrlParse.m */,
+				23188AAC1BE6F03200FC8F9F /* NSArray+NSArrayExtension.h */,
+				23188AAD1BE6F03200FC8F9F /* NSArray+NSArrayExtension.m */,
+				23188AAE1BE6F03200FC8F9F /* NSData+Extension.h */,
+				23188AAF1BE6F03200FC8F9F /* NSData+Extension.m */,
+				23188AB01BE6F03200FC8F9F /* NSDictionary+Extension.h */,
+				23188AB11BE6F03200FC8F9F /* NSDictionary+Extension.m */,
+				23188AB21BE6F03200FC8F9F /* NSObject+Extension.h */,
+				23188AB31BE6F03200FC8F9F /* NSObject+Extension.m */,
+				23188AB41BE6F03200FC8F9F /* NSString+Extension.h */,
+				23188AB51BE6F03200FC8F9F /* NSString+Extension.m */,
+				23188AB61BE6F03200FC8F9F /* RegexKitLite */,
+			);
+			path = lang;
+			sourceTree = "<group>";
+		};
+		23188AB61BE6F03200FC8F9F /* RegexKitLite */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RegexKitLite;
+			sourceTree = "<group>";
+		};
+		23188AB91BE6F03200FC8F9F /* net */ = {
+			isa = PBXGroup;
+			children = (
+				23188ABA1BE6F03200FC8F9F /* MTDownloaderHelper.h */,
+				23188ABB1BE6F03200FC8F9F /* MTDownloaderHelper.m */,
+				23188ABC1BE6F03200FC8F9F /* MTDownloadObjectModel.h */,
+				23188ABD1BE6F03200FC8F9F /* MTDownloadObjectModel.m */,
+				23188ABE1BE6F03200FC8F9F /* MTDownloadRecvData.h */,
+				23188ABF1BE6F03200FC8F9F /* MTDownloadRecvData.m */,
+				23188AC01BE6F03200FC8F9F /* MTDownloadRequest.h */,
+				23188AC11BE6F03200FC8F9F /* MTDownloadRequest.m */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		23188AC21BE6F03200FC8F9F /* task */ = {
+			isa = PBXGroup;
+			children = (
+				23188AC31BE6F03200FC8F9F /* MTTask.h */,
+				23188AC41BE6F03200FC8F9F /* MTTask.m */,
+				23188AC51BE6F03200FC8F9F /* MTTaskDef.h */,
+				23188AC61BE6F03200FC8F9F /* MTTaskPool.h */,
+				23188AC71BE6F03200FC8F9F /* MTTaskPool.m */,
+				23188AC81BE6F03200FC8F9F /* MTTaskResult.h */,
+				23188AC91BE6F03200FC8F9F /* MTTaskResult.m */,
+			);
+			path = task;
+			sourceTree = "<group>";
+		};
 		239547121BCF929D00C957B8 = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +242,7 @@
 		2395471D1BCF929D00C957B8 /* MTNetDemo */ = {
 			isa = PBXGroup;
 			children = (
-				239547511BCF92B400C957B8 /* mtnet */,
+				23188A9F1BE6F03200FC8F9F /* mtnet */,
 				239547211BCF929D00C957B8 /* AppDelegate.h */,
 				239547221BCF929D00C957B8 /* AppDelegate.m */,
 				239547241BCF929D00C957B8 /* ViewController.h */,
@@ -198,91 +282,6 @@
 				239547451BCF929D00C957B8 /* Info.plist */,
 			);
 			path = MTNetDemoUITests;
-			sourceTree = "<group>";
-		};
-		239547511BCF92B400C957B8 /* mtnet */ = {
-			isa = PBXGroup;
-			children = (
-				239547521BCF92B400C957B8 /* io */,
-				239547571BCF92B400C957B8 /* lang */,
-				2395476B1BCF92B400C957B8 /* mcfDef.h */,
-				2395476C1BCF92B400C957B8 /* MtLogger.h */,
-				2395476D1BCF92B400C957B8 /* net */,
-				239547761BCF92B400C957B8 /* task */,
-			);
-			name = mtnet;
-			path = ../../mtnet;
-			sourceTree = "<group>";
-		};
-		239547521BCF92B400C957B8 /* io */ = {
-			isa = PBXGroup;
-			children = (
-				239547531BCF92B400C957B8 /* MTFile.h */,
-				239547541BCF92B400C957B8 /* MTFile.m */,
-				239547551BCF92B400C957B8 /* MTPath.h */,
-				239547561BCF92B400C957B8 /* MTPath.m */,
-			);
-			path = io;
-			sourceTree = "<group>";
-		};
-		239547571BCF92B400C957B8 /* lang */ = {
-			isa = PBXGroup;
-			children = (
-				239547581BCF92B400C957B8 /* Base64Transcoder.c */,
-				239547591BCF92B400C957B8 /* Base64Transcoder.h */,
-				2395475A1BCF92B400C957B8 /* MTFixSizeMutableDictionary.h */,
-				2395475B1BCF92B400C957B8 /* MTFixSizeMutableDictionary.m */,
-				2395475C1BCF92B400C957B8 /* MTSchemeUrlParse.h */,
-				2395475D1BCF92B400C957B8 /* MTSchemeUrlParse.m */,
-				2395475E1BCF92B400C957B8 /* NSArray+NSArrayExtension.h */,
-				2395475F1BCF92B400C957B8 /* NSArray+NSArrayExtension.m */,
-				239547601BCF92B400C957B8 /* NSData+Extension.h */,
-				239547611BCF92B400C957B8 /* NSData+Extension.m */,
-				239547641BCF92B400C957B8 /* NSDictionary+Extension.h */,
-				239547651BCF92B400C957B8 /* NSDictionary+Extension.m */,
-				239547661BCF92B400C957B8 /* NSObject+Extension.h */,
-				239547671BCF92B400C957B8 /* NSObject+Extension.m */,
-				239547681BCF92B400C957B8 /* NSString+Extension.h */,
-				239547691BCF92B400C957B8 /* NSString+Extension.m */,
-				2395476A1BCF92B400C957B8 /* RegexKitLite */,
-			);
-			path = lang;
-			sourceTree = "<group>";
-		};
-		2395476A1BCF92B400C957B8 /* RegexKitLite */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RegexKitLite;
-			sourceTree = "<group>";
-		};
-		2395476D1BCF92B400C957B8 /* net */ = {
-			isa = PBXGroup;
-			children = (
-				2395476E1BCF92B400C957B8 /* MTDownloaderHelper.h */,
-				2395476F1BCF92B400C957B8 /* MTDownloaderHelper.m */,
-				239547701BCF92B400C957B8 /* MTDownloadObjectModel.h */,
-				239547711BCF92B400C957B8 /* MTDownloadObjectModel.m */,
-				239547721BCF92B400C957B8 /* MTDownloadRecvData.h */,
-				239547731BCF92B400C957B8 /* MTDownloadRecvData.m */,
-				239547741BCF92B400C957B8 /* MTDownloadRequest.h */,
-				239547751BCF92B400C957B8 /* MTDownloadRequest.m */,
-			);
-			path = net;
-			sourceTree = "<group>";
-		};
-		239547761BCF92B400C957B8 /* task */ = {
-			isa = PBXGroup;
-			children = (
-				239547771BCF92B400C957B8 /* MTTask.h */,
-				239547781BCF92B400C957B8 /* MTTask.m */,
-				239547791BCF92B400C957B8 /* MTTaskDef.h */,
-				2395477A1BCF92B400C957B8 /* MTTaskPool.h */,
-				2395477B1BCF92B400C957B8 /* MTTaskPool.m */,
-				2395477C1BCF92B400C957B8 /* MTTaskResult.h */,
-				2395477D1BCF92B400C957B8 /* MTTaskResult.m */,
-			);
-			path = task;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,27 +414,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2395478C1BCF92B400C957B8 /* MTDownloadRequest.m in Sources */,
-				2395477E1BCF92B400C957B8 /* MTFile.m in Sources */,
-				239547891BCF92B400C957B8 /* MTDownloaderHelper.m in Sources */,
-				239547871BCF92B400C957B8 /* NSObject+Extension.m in Sources */,
-				2395478B1BCF92B400C957B8 /* MTDownloadRecvData.m in Sources */,
-				2395478A1BCF92B400C957B8 /* MTDownloadObjectModel.m in Sources */,
-				239547821BCF92B400C957B8 /* MTSchemeUrlParse.m in Sources */,
-				239547861BCF92B400C957B8 /* NSDictionary+Extension.m in Sources */,
-				2395478F1BCF92B400C957B8 /* MTTaskResult.m in Sources */,
-				2395478E1BCF92B400C957B8 /* MTTaskPool.m in Sources */,
-				2395478D1BCF92B400C957B8 /* MTTask.m in Sources */,
+				23188AD71BE6F03200FC8F9F /* MTDownloadRequest.m in Sources */,
+				23188ACC1BE6F03200FC8F9F /* Base64Transcoder.c in Sources */,
+				23188AD41BE6F03200FC8F9F /* MTDownloaderHelper.m in Sources */,
+				23188AD21BE6F03200FC8F9F /* NSObject+Extension.m in Sources */,
+				23188AD61BE6F03200FC8F9F /* MTDownloadRecvData.m in Sources */,
+				23188AD51BE6F03200FC8F9F /* MTDownloadObjectModel.m in Sources */,
+				23188ACF1BE6F03200FC8F9F /* NSArray+NSArrayExtension.m in Sources */,
+				23188AD11BE6F03200FC8F9F /* NSDictionary+Extension.m in Sources */,
+				23188AD01BE6F03200FC8F9F /* NSData+Extension.m in Sources */,
+				23188ADA1BE6F03200FC8F9F /* MTTaskResult.m in Sources */,
+				23188AD91BE6F03200FC8F9F /* MTTaskPool.m in Sources */,
+				23188AD81BE6F03200FC8F9F /* MTTask.m in Sources */,
 				239547921BCF963300C957B8 /* AppImageDowloadRecv.m in Sources */,
-				239547801BCF92B400C957B8 /* Base64Transcoder.c in Sources */,
+				23188ACD1BE6F03200FC8F9F /* MTFixSizeMutableDictionary.m in Sources */,
 				239547261BCF929D00C957B8 /* ViewController.m in Sources */,
-				239547841BCF92B400C957B8 /* NSData+Extension.m in Sources */,
+				23188ACA1BE6F03200FC8F9F /* MTFile.m in Sources */,
 				239547231BCF929D00C957B8 /* AppDelegate.m in Sources */,
-				239547831BCF92B400C957B8 /* NSArray+NSArrayExtension.m in Sources */,
-				239547811BCF92B400C957B8 /* MTFixSizeMutableDictionary.m in Sources */,
 				239547201BCF929D00C957B8 /* main.m in Sources */,
-				2395477F1BCF92B400C957B8 /* MTPath.m in Sources */,
-				239547881BCF92B400C957B8 /* NSString+Extension.m in Sources */,
+				23188ACE1BE6F03200FC8F9F /* MTSchemeUrlParse.m in Sources */,
+				23188ACB1BE6F03200FC8F9F /* MTPath.m in Sources */,
+				23188AD31BE6F03200FC8F9F /* NSString+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,6 +660,7 @@
 				2395474A1BCF929D00C957B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2395474B1BCF929D00C957B8 /* Build configuration list for PBXNativeTarget "MTNetDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -669,6 +669,7 @@
 				2395474D1BCF929D00C957B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2395474E1BCF929D00C957B8 /* Build configuration list for PBXNativeTarget "MTNetDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -677,6 +678,7 @@
 				239547501BCF929D00C957B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -31,6 +31,8 @@
     [self.downloadHelper setTimeout:20];
     [self.downloadHelper setMaxConcurrentTaskCount:5];
     
+    [self download1];
+    
     
     
 }
@@ -84,7 +86,7 @@
 
 - (void) didTaskReceiveDataFinish   : (NSData *) theData    request:(MTDownloadRequest*) request
 {
-    NSLog(@"download ok");
+    NSLog(@"download ok %@", [[NSString alloc] initWithData:theData encoding:NSUTF8StringEncoding]);
 }
 
 - (void) taskDataDownloadFailed     : (NSError *) error     request:(MTDownloadRequest*) request

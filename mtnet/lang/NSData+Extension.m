@@ -122,7 +122,7 @@ static BOOL initialized = NO;
 									 (iv == nil ? kCCOptionECBMode | kCCOptionPKCS7Padding : kCCOptionPKCS7Padding),	//default: CBC (when initial vector is supplied)
 									 keyBytes, 
 									 keyLength, 
-									 iv,
+									 (__bridge const void *)(iv),
 									 [self bytes], 
 									 [self length],
 									 encryptedBytes, 
@@ -157,7 +157,7 @@ static BOOL initialized = NO;
 									 (iv == nil ? kCCOptionECBMode | kCCOptionPKCS7Padding : kCCOptionPKCS7Padding),	//default: CBC (when initial vector is supplied)
 									 keyBytes, 
 									 keyLength, 
-									 iv,
+									 (__bridge const void *)(iv),
 									 [self bytes], 
 									 [self length],
 									 decryptedBytes, 
@@ -184,7 +184,7 @@ static BOOL initialized = NO;
 		{
 			NSData* encodedData = [NSData dataWithBytes:base64Encoded length:base64EncodedLength];
 			NSString* base64EncodedString = [[NSString alloc] initWithData:encodedData encoding:NSUTF8StringEncoding];
-			return [base64EncodedString autorelease];
+			return base64EncodedString;
 		}
 	}
 	@catch (NSException * e)
@@ -239,7 +239,7 @@ static BOOL initialized = NO;
     }
 
     NSInteger outputLength = inputLength * 3 / 4;
-    NSMutableData *data = [[NSMutableData dataWithLength:outputLength] retain];
+    NSMutableData *data = [NSMutableData dataWithLength:outputLength];
     uint8_t *output = data.mutableBytes;
 
     NSInteger inputPoint = 0;
@@ -259,7 +259,7 @@ static BOOL initialized = NO;
         }
     }
 
-    return [data autorelease];
+    return data;
 }
 
 

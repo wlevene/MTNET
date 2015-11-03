@@ -23,26 +23,13 @@
 @synthesize runloop = runloop_;
 @synthesize runloopMode = runloopMode_;
 
-- (void) dealloc
-{
-    MTRelease(name_);
-    MTRelease(downloadModel_);
-    
-    MTRelease(recvData_);
-    MTRelease(runloop_)
-    
-    MTRelease(runloopMode_)
-    MTRelease(delegate_)
-    
-    [super dealloc];
-}
 
 - (id) init
 {
     self = [super init];
     if (self) {
         self.name = [NSString generateUUID];
-        self.downloadModel = [[[MTDownloadObjectModel alloc] init] autorelease];
+        self.downloadModel = [[MTDownloadObjectModel alloc] init];
     }
     return self;
 }

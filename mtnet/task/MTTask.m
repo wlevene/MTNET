@@ -21,13 +21,6 @@
 
 @synthesize taskDelegate = task_delegate_;
 
--(void) dealloc
-{
-    MTRelease(_taskName);
-    MTRelease(_result);
-    
-    [super dealloc];
-}
 
 -(id) init
 {
@@ -43,7 +36,6 @@
         taskResult.result = NUKNOW;
         
         self.result = taskResult;
-        MTRelease(taskResult);
         
         self.status = YTaskStatus_Inactive;
     }
@@ -123,7 +115,6 @@
     [dic setObject:NUMBER(self.bNeedStop) forKey:@"bNeedStop"];    
     
     NSString * result = [dic description];
-    MTRelease(dic);
     
     return result;
 }

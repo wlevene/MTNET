@@ -21,11 +21,11 @@
     MTTaskStatus _status;    
     BOOL suspend_task;
     
-    id<MTTaskDelegate> task_delegate_;
+//    id<MTTaskDelegate> task_delegate_;
 }
 
-@property(nonatomic, copy) NSString * taskName;
-@property(nonatomic, retain) MTTaskResult * result;
+@property(nonatomic, strong) NSString * taskName;
+@property(nonatomic, strong) MTTaskResult * result;
 
 @property (nonatomic, assign) BOOL bNeedStop;
 @property (nonatomic, assign, getter = isSuspended) BOOL suspendTask;

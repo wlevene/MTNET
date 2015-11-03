@@ -68,8 +68,7 @@
                 [keys insertObject:key atIndex:0];
             }
             
-            id temp = [kDictionary objectForKey:key];
-            return [[temp retain] autorelease];
+            return [kDictionary objectForKey:key];
         }
         }
         @catch (NSException *exception) {
@@ -92,7 +91,7 @@
           @try {
               @synchronized(self)
               {
-                  NSString * keyValue = [[key mutableCopy] autorelease];
+                  NSString * keyValue = key;
                 
                   if ([NSString isNilOrEmpty:keyValue])
                   {
@@ -179,17 +178,6 @@
     {
         return [kDictionary allValues];
     }
-}
-
-- (void)dealloc
-{
-    MTRelease(obj1)
-    MTRelease(obj2)
-    MTRelease(obj3)
-    
-	MTRelease(kDictionary);
-    MTRelease(keys);
-	[super dealloc];
 }
 
 @end

@@ -33,7 +33,6 @@
     }
     
     bSetTaskPoolName = YES;
-    MTRelease(pool_id);
     
     pool_id = [[NSString alloc] initWithString:value];
     [self.pool setName:value];
@@ -45,16 +44,6 @@
 }
 
 
-
--(void) dealloc
-{    
-    MTRelease(_operation_queue_)
-    MTRelease(taskResults)
-    MTRelease(pool_id)    
-    
-    [super dealloc];
-}
-
 -(void) _init
 {
     if(b_inited)
@@ -64,17 +53,12 @@
     
         
     bSetTaskPoolName = NO;
-    MTRelease(pool_id)
     
-    self.poolId = [[[NSString alloc] initWithString:[NSString generateUUID]] autorelease]; // 不设置的时候，将会内部产生一个名称
+    self.poolId = [[NSString alloc] initWithString:[NSString generateUUID]]; // 不设置的时候，将会内部产生一个名称
     
-    NSOperationQueue * _operation_tmp_ = [[NSOperationQueue alloc] init];
-    self.pool = _operation_tmp_;
-    MTRelease(_operation_tmp_);
+    self.pool = [[NSOperationQueue alloc] init];
     
-    MTFixSizeMutableDictionary * tmp = [[MTFixSizeMutableDictionary alloc] initWithCapacity:_NAX_SIZE_TASK_RELUST_IN_TASK_POOL_];
-    self.taskResults = tmp;
-    MTRelease(tmp);
+    self.taskResults = [[MTFixSizeMutableDictionary alloc] initWithCapacity:_NAX_SIZE_TASK_RELUST_IN_TASK_POOL_];
     
     b_inited = YES;
 }
@@ -140,7 +124,7 @@
         return nil;
     }
     
-    NSArray * _tasks = [tasks retain];
+    NSArray * _tasks = tasks;
     
     NSMutableArray * task_names_ = [[NSMutableArray alloc] init];
     
@@ -157,9 +141,8 @@
     }
     
     [self.pool addOperations:_tasks waitUntilFinished:wait];
-    [_tasks autorelease];
     
-    return (NSArray *) [task_names_ autorelease];
+    return (NSArray *) task_names_;
 }
 
 -(void) cancelAllTask

@@ -29,14 +29,6 @@
 @synthesize recvedDataFromNet = recvedDataFromNet_;
 @synthesize ignoreCache;
 
--(void) dealloc
-{
-    MTRelease(name_);
-    MTRelease(localCacheDirPath_);
-    
-    MTRelease(downloadModel_)
-    [super dealloc];
-}
 
 -(id) init
 {
@@ -96,11 +88,6 @@
 @implementation MTDownloadRecvDataMemory
 @synthesize recvData = data_;
 
--(void) dealloc
-{
-    MTRelease(data_);
-    [super dealloc];
-}
 
 -(id) init
 {
@@ -117,7 +104,7 @@
     [super AppendData:dataValue];
     
     if(self.recvData == nil)
-        self.recvData = [[[NSMutableData alloc] init] autorelease];
+        self.recvData = [[NSMutableData alloc] init];
     [self.recvData appendData:dataValue];
     
 }
@@ -159,7 +146,6 @@
 -(void) dealloc
 {
     [self.fileHandle closeFile];
-    MTRelease(file_handle_);
     
     // 为了 在主动 cancel 下载任务时， 需要自己清理还下完的文件
     if (self.isRecvedDataFromNet)
@@ -181,8 +167,7 @@
         }
     }
     
-    MTRelease(tmpFullPath_);
-    [super dealloc];
+//    [super dealloc];
 }
 
 - (id) init
@@ -253,7 +238,6 @@
             if (!self.fileHandle)
             {
                 [self.fileHandle closeFile];
-                MTRelease(file_handle_);
             }
             NSError * error = nil;
             self.fileHandle = [NSFileHandle fileHandleForUpdatingURL:[NSURL fileURLWithPath:self.tmpFullPath]
@@ -268,7 +252,6 @@
                 if (!self.fileHandle)
                 {
                     [self.fileHandle closeFile];
-                    MTRelease(file_handle_);
                 }
                 
                 self.fileHandle = [NSFileHandle fileHandleForUpdatingURL:[NSURL fileURLWithPath:self.tmpFullPath]
@@ -283,7 +266,6 @@
                     if (!self.fileHandle)
                     {
                         [self.fileHandle closeFile];
-                        MTRelease(file_handle_);
                     }
                     
                     self.fileHandle = [NSFileHandle fileHandleForUpdatingURL:[NSURL fileURLWithPath:self.tmpFullPath]
@@ -337,7 +319,7 @@
 - (NSString *) tmpFullPath
 {
     if ([NSString isNilOrEmpty:tmpFullPath_]) {
-        tmpFullPath_ = [[MTPath Combine:kDownloadTempPath combinePath:[self.name stringByAppendingString:[NSString generateUUID]]] retain];
+        tmpFullPath_ = [MTPath Combine:kDownloadTempPath combinePath:[self.name stringByAppendingString:[NSString generateUUID]]];
         
         BOOL isDirectory = FALSE;
         [MTFile isDirectory:tmpFullPath_ isDirectory:&isDirectory];

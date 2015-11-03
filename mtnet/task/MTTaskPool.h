@@ -20,9 +20,9 @@
 }
 
 @property (nonatomic, readonly) BOOL                            isInited;
-@property (nonatomic, retain)   MTFixSizeMutableDictionary       * taskResults;
-@property (nonatomic, copy)     NSString                        * poolId;
-@property (nonatomic, retain)   NSOperationQueue                * pool;
+@property (nonatomic, strong)   MTFixSizeMutableDictionary       * taskResults;
+@property (nonatomic, strong)     NSString                        * poolId;
+@property (nonatomic, strong)   NSOperationQueue                * pool;
 
 /**
  * @brief:  设置当前线程池可以同时执行的线程数

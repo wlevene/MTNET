@@ -71,7 +71,8 @@
     
 }
 
-@property (nonatomic, retain) MTFixSizeMutableDictionary * requestDictionary;
+
+@property (nonatomic, strong) MTFixSizeMutableDictionary * requestDictionary;
 @property (nonatomic, assign) NSTimeInterval timeout;
 
 
@@ -124,7 +125,7 @@
 	MTDownloadObjectModel * downloadModel_;
 	NSURLConnection *urlconnection_;
     
-    id <MTDownloaderTaskDelegate> delegate_;
+//    id <MTDownloaderTaskDelegate> delegate_;
     
     NSTimeInterval  timeout;
     NSURL * url;
@@ -136,16 +137,16 @@
     
 }
 
-@property (nonatomic, retain) NSURLResponse *response;
-@property (nonatomic, retain) NSURLConnection *urlconnection;
+@property (nonatomic, strong) NSURLResponse *response;
+@property (nonatomic, strong) NSURLConnection *urlconnection;
 
-@property (nonatomic, retain) MTDownloadRecvData *recvData;
-@property (nonatomic, retain) MTDownloadObjectModel *downloadModel;
+@property (nonatomic, strong) MTDownloadRecvData *recvData;
+@property (nonatomic, strong) MTDownloadObjectModel *downloadModel;
 
 @property (nonatomic, assign) id<MTDownloaderTaskDelegate> delegate;
 @property (nonatomic, assign) NSTimeInterval  timeout;
 
-@property (nonatomic, retain) NSURL * url;
+@property (nonatomic, strong) NSURL * url;
 @property (nonatomic, assign) NSTimeInterval connectionTimeout;
 
 @property (nonatomic, strong) NSRunLoop * runloop;

@@ -32,12 +32,12 @@
     NSString * runloopMode_;
 }
 
-@property (nonatomic, copy) NSString * name;
-@property (nonatomic, retain) MTDownloadObjectModel * downloadModel;
+@property (nonatomic, strong) NSString * name;
+@property (nonatomic, strong) MTDownloadObjectModel * downloadModel;
 
-@property (nonatomic, retain)  MTDownloadRecvData * recvData;
+@property (nonatomic, strong)  MTDownloadRecvData * recvData;
 
-@property (nonatomic, retain) id<MTDownloadRequestDelegate> delegate;
+@property (nonatomic, strong) id<MTDownloadRequestDelegate> delegate;
 @property (nonatomic, assign) BOOL unNotifyAtFinish;
 
 @property (nonatomic, assign) PriorityLevel  level;

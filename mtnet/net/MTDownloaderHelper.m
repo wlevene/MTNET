@@ -29,21 +29,15 @@
 }
 
 @synthesize timeout;
-- (void) dealloc
-{
-    MTRelease(requestDictionary_);
-    [super dealloc];
-}
+
 
 - (id) init
 {
     self = [super init];
     if (self)
     {
-        MTFixSizeMutableDictionary * tmp = [[MTFixSizeMutableDictionary alloc] initWithCapacity:_MAX_SIZE_DOWNLOAD_TASK_RELUST_IN_TASK_POOL_];
-        self.requestDictionary = tmp;
-        MTRelease(tmp);
-        
+        self.requestDictionary = [[MTFixSizeMutableDictionary alloc] initWithCapacity:_MAX_SIZE_DOWNLOAD_TASK_RELUST_IN_TASK_POOL_];
+          
         [self setMaxConcurrentTaskCount:4];
     }
     return self;
@@ -117,8 +111,6 @@
     //             [request.downloadModel url],
     //             task_.taskName);
     
-    MTRelease(task_);
-    
 }
 
 - (void) cancelDownloadRequest:(MTDownloadRequest *) request
@@ -165,7 +157,7 @@
     if (self.requestDictionary &&
         ![NSArray isNilOrEmpty:[self.requestDictionary keys]] )
     {
-        NSArray * requestKeys = [[self.requestDictionary keys] mutableCopy];
+        NSArray * requestKeys = [self.requestDictionary keys];
         
         for (NSString * key  in requestKeys)
         {
@@ -181,8 +173,6 @@
             }
             requst.delegate = nil;
         }
-        
-        MTRelease(requestKeys);
     }
     
     [self stopAllTask];
@@ -442,22 +432,8 @@
 - (void) dealloc
 {
     [self stopDownload];
-    
-    MTRelease(downloadModel_);
-    MTRelease(urlconnection_);
-    
-    MTRelease(recvData_);
-    MTRelease(response_);
-    
-    MTRelease(url)
-    MTRelease(exitTime_)
-    
-    MTRelease(connectionTimeoutTimer_);
-    
-    MTRelease(runloopMode_)
-    MTRelease(runloop_)
-    
-    [super dealloc];
+
+//    [super dealloc];
 }
 
 - (id) init
@@ -680,8 +656,7 @@
         [theRequest setHTTPBody:self.downloadModel.httpBody];
     }
     
-    self.urlconnection = [[[NSURLConnection alloc] initWithRequest:theRequest delegate:self startImmediately:NO] autorelease];
-    MTRelease(theRequest)
+    self.urlconnection = [[NSURLConnection alloc] initWithRequest:theRequest delegate:self startImmediately:NO];
 	if (!self.urlconnection)
 	{
 		NSString *reason = [NSString stringWithFormat:@"URL connection failed for string %@", self->url];
@@ -811,9 +786,7 @@
         
         if(!self.recvData)
         {
-            MTDownloadRecvDataMemory * temp_recv = [[MTDownloadRecvDataMemory alloc] init];
-            self.recvData = temp_recv;
-            MTRelease(temp_recv)
+            self.recvData = [[MTDownloadRecvDataMemory alloc] init];
         }
         
         [self.recvData AppendData:theData];

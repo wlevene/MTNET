@@ -13,8 +13,8 @@
 #import "NSDictionary+Extension.h"
 @interface MTSchemeUrlParse ()
 
-@property (nonatomic, retain) NSURL * schemeUrl;
-@property (nonatomic, retain) NSMutableDictionary * paramDic;
+@property (nonatomic, strong) NSURL * schemeUrl;
+@property (nonatomic, strong) NSMutableDictionary * paramDic;
 
 @end
 
@@ -54,20 +54,15 @@
 
 - (void) setSchemeUrl:(NSURL *)schemeUrl
 {
-    MTRelease(_schemeUrl);
-    _schemeUrl = [schemeUrl retain];
+    _schemeUrl = schemeUrl;
     
-    MTRelease(_scheme);
-    _scheme = [[self.schemeUrl scheme] copy];
+    _scheme = [self.schemeUrl scheme];
     
-    MTRelease(_doma);
-    _doma = [[self.schemeUrl host] copy];
+    _doma = [self.schemeUrl host];
     
-    MTRelease(_query);
-    _query = [[self.schemeUrl query] copy];
+    _query = [self.schemeUrl query];
     
-    MTRelease(_resourceSpecifier);
-    _resourceSpecifier = [[self.schemeUrl resourceSpecifier] copy];
+    _resourceSpecifier = [self.schemeUrl resourceSpecifier];
     
     
     self.paramDic = [NSMutableDictionary dictionary];
@@ -105,7 +100,6 @@
         }
     }
     
-    MTRelease(_params);
     _params = [[NSArray alloc] initWithArray:mutableParams];
 }
 

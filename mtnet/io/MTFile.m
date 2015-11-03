@@ -50,10 +50,6 @@
     }
 }
 
-- (void)dealloc {
-    [self close];
-    [super dealloc];
-}
 
 - (NSString*) readUTF {
     int length = 0;

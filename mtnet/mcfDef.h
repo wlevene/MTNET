@@ -9,7 +9,6 @@
 #define mcfDef_h
 
 
-#define MTRelease(obj)               [obj release]; obj = nil;
 #define MTLocalizedString(s)         NSLocalizedString(s,nil)
 
 #define CLASSNAME(cls)       [[cls class] description]

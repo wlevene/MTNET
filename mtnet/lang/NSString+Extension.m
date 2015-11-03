@@ -86,7 +86,7 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
 		if(Base64DecodeData(cStringValue, strlen(cStringValue), base64Decoded, &base64DecodedLength))
 		{
 			NSData* base64DecodedData = [[NSData alloc] initWithBytes:base64Decoded length:base64DecodedLength];
-			return [base64DecodedData autorelease];
+			return base64DecodedData;
 		}
 	}
 	@catch (NSException * e)
@@ -117,9 +117,9 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
     CFRelease(uuidRef);
     
     
-    NSString * result = [[NSString alloc] initWithString:(NSString *)uuidStringRef];
+    NSString * result = [[NSString alloc] initWithString:(__bridge NSString * _Nonnull)(uuidStringRef)];
     CFRelease(uuidStringRef);
-    return [result autorelease];
+    return result;
 }
 
 -(BOOL) isIncludeSubString:(NSString *) subString
@@ -301,7 +301,7 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
         else characters[length++] = '=';
     }
     
-    return [[[NSString alloc] initWithBytesNoCopy:characters length:length encoding:NSASCIIStringEncoding freeWhenDone:YES] autorelease];
+    return [[NSString alloc] initWithBytesNoCopy:characters length:length encoding:NSASCIIStringEncoding freeWhenDone:YES];
 }
 
 - (NSString*)escapeHTML
@@ -347,7 +347,7 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
 - (NSString*)unescapeHTML
 {
 	NSMutableString* s = [NSMutableString string];
-	NSMutableString* target = [[self mutableCopy] autorelease];
+	NSMutableString* target = [self mutableCopy];
 	NSCharacterSet* chs = [NSCharacterSet characterSetWithCharactersInString:@"&"];
 	
 	while ([target length] > 0) {
@@ -418,12 +418,12 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
 {
     unsigned long encode = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000); 
     NSString *str = [[NSString alloc] initWithData:data encoding:encode]; 
-    return [str autorelease];
+    return str ;
 }
 
 - (NSString*) utf8StringByData:(NSData*) data {
     NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    return [str autorelease];
+    return str ;
 }
 
 - (NSString *) gbkString

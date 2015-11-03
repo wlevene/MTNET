@@ -10,13 +10,13 @@
 
 @interface MTSchemeUrlParse : NSObject
 
-@property (nonatomic, copy, readonly)   NSString * scheme;
-@property (nonatomic, copy, readonly)   NSString * doma;
+@property (nonatomic, strong, readonly)   NSString * scheme;
+@property (nonatomic, strong, readonly)   NSString * doma;
 
-@property (nonatomic, copy, readonly)   NSString * query;
-@property (nonatomic, retain, readonly) NSString * resourceSpecifier;
+@property (nonatomic, strong, readonly)   NSString * query;
+@property (nonatomic, strong, readonly) NSString * resourceSpecifier;
 
-@property (nonatomic, retain) NSArray * params;
+@property (nonatomic, strong) NSArray * params;
 
 - (id) initWithString:(NSString *)string;
 - (id) initWithUrl:(NSURL *) url;

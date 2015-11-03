@@ -22,17 +22,6 @@
 @synthesize cachePolicy     = cachePolicy_;
 @synthesize httpBody        =  httpBody_;
 
-- (void) dealloc
-{
-    MTRelease(url_)
-    MTRelease(httpHeaderField_)
-    
-    MTRelease(httpMethod_)
-    MTRelease(httpBody_)
-    
-    [super dealloc];
-}
-
 - (id) init
 {
     self = [super init];

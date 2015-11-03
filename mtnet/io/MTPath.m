@@ -28,7 +28,7 @@ static NSString* g_kDocuments = nil;
         
         @synchronized(self){if (g_kDocuments == nil) {
             g_kDocuments = [MTPath Combine:NSHomeDirectory() combinePath:@"Documents"];
-            [g_kDocuments retain];
+           
         }}
     }
     return g_kDocuments;
@@ -41,7 +41,7 @@ static NSString* g_kTmp = nil;
         
         @synchronized(self){if (g_kTmp == nil) {
             g_kTmp = [MTPath Combine:NSHomeDirectory() combinePath:@"tmp"];
-            [g_kTmp retain];
+           
         }}
     }
     return g_kTmp;
@@ -54,7 +54,7 @@ static NSString* g_kLibrary = nil;
         
         @synchronized(self){if (g_kLibrary == nil) {
             g_kLibrary = [MTPath Combine:NSHomeDirectory() combinePath:@"Library"];
-            [g_kLibrary retain];
+            
         }}
     }
     return g_kLibrary;
@@ -67,7 +67,7 @@ static NSString* g_kLibraryCaches = nil;
         
         @synchronized(self) {if (g_kLibraryCaches == nil) {
             g_kLibraryCaches = [MTPath Combine:[self kLibrary] combinePath:@"Caches"];
-            [g_kLibraryCaches retain];
+           
         }}
     }
     return g_kLibraryCaches;
@@ -81,7 +81,7 @@ static NSString* g_kResource = nil;
         
         @synchronized(self){if (g_kResource == nil) {
             g_kResource = [[NSBundle mainBundle] resourcePath];
-            [g_kResource retain];
+           
         }}
     }
     return g_kResource;
@@ -136,8 +136,7 @@ static NSString* g_kResource = nil;
  */
 + (NSString *) Combine:(NSString *) path1 combinePath:(NSString *) path2
 {
-    NSString * path = [[path1 stringByAppendingPathComponent:path2] copy];
-    return [path autorelease];
+    return [path1 stringByAppendingPathComponent:path2];
 }
 
 

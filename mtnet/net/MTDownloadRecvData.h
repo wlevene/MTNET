@@ -33,8 +33,8 @@
     BOOL ignoreCache;
     
 }
-@property (nonatomic, copy) NSString * name;
-@property (nonatomic, copy) NSString * localCacheDirPath;
+@property (nonatomic, strong) NSString * name;
+@property (nonatomic, strong) NSString * localCacheDirPath;
 
 @property (nonatomic, assign) long long needRecvDataLenght;
 @property (nonatomic, assign) BOOL valid;
@@ -50,7 +50,7 @@
 @property (nonatomic, assign, getter = isIgnoreCache) BOOL ignoreCache;
 @property (nonatomic, assign) NSInteger tag;
 
-@property (nonatomic, retain) NSString * localFullPath;
+@property (nonatomic, strong) NSString * localFullPath;
 
 
 -(void) AppendData : (NSData *) data;
@@ -70,7 +70,7 @@
 {
     NSMutableData *data_;
 }
-@property (retain) NSMutableData *recvData;
+@property (strong) NSMutableData *recvData;
 @end
 
 @interface MTDownloadRecvDataFileSystem : MTDownloadRecvData
@@ -85,8 +85,8 @@
     
 }
 
-@property (nonatomic, retain) NSFileHandle * fileHandle;
+@property (nonatomic, strong) NSFileHandle * fileHandle;
 
-@property (nonatomic, copy) NSString * tmpFullPath;
+@property (nonatomic, strong) NSString * tmpFullPath;
 
 @end

@@ -187,3 +187,6 @@ request.delegate  = self;
 ---
 If you like this project, give a start ；）
 
+
+---
+Using Mtnet in your App? Let me know [weibo](http://weibo.com/wgblog)  or [gang.wang.china@gmail.com](gang.wang.china@gmail.com)  :).
